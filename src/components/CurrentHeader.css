@@ -1,0 +1,123 @@
+/* Menu Container Styles */
+.current-home-header {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 0px;;
+  height: 132px;
+  width: 100vw;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: silver;
+  border: none;
+  margin-bottom: 100px;
+  }
+  
+  .support-container {
+    position: relative;
+    bottom: 30px;
+   left: 190px;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .support-button {
+    margin-right: 1px;
+    padding: 0px 8px;
+    background-color: transparent;
+    color: #00263e;
+    font: inherit;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.6px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .support-button:hover {
+    color: rgb(196, 227, 238);
+  }
+  
+  .menu-container {
+    position: relative;
+    top: 35px;
+    right: 10px;
+    margin-right: 50px;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .menu-button {
+    position: relative;
+    right: 7px;
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    letter-spacing: -0.6px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .menu-button:hover {
+    color: gold; /* Change text color on hover */
+  }
+  
+  .menu-button:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: green;
+    transition: width 0.3s ease;
+  }
+  
+  .button:last-child {
+    margin-bottom: 0;
+  }
+  
+  .logout-button-container {
+    position: relative;
+    top: 35px;
+    right: 110px;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .button.logout {
+    padding: 6px 16px;
+    font-size: 1rem;
+    margin-right: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid silver;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    letter-spacing: -0.6px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  

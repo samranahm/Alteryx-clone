@@ -1,0 +1,449 @@
+/* General styles */
+.App {
+  text-align: center;
+  
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Bootstrap form style */
+/* .form-inline {
+  width: 100%;
+}
+
+.form-group {
+  width: 90%;
+}
+
+.input-group {
+  width: 90% !important;
+}
+
+.form-control {
+  width: 80% !important;
+}
+
+span.input-group-addon {
+  width: 50px !important;
+} */
+
+/* .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.center form {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+} */
+
+/* Custom Navbar styles */
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: red;
+  z-index: 1000;
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 80px;
+}
+
+/* Home page styles */
+.home {
+  position: absolute;
+  top: 130px;
+  width: 100vw;
+  left: 0px;
+  height: fit-content;
+  background-color: blue;
+  justify-content: center;
+  background-color: black;
+}
+
+.home img {
+  width: 1343px;
+  height: 700px;
+}
+
+/* New Buttons */
+.button-container {
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.register-button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button.search-button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  color: #007bff;
+}
+
+.button.search-button:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.button.support,
+.button.community,
+.button.contact-us,
+.button.language,
+.button.login {
+  background-color: none;
+}
+
+.parent-container {
+  display: flex;
+  background-color: bisque;
+  color: black;
+  justify-content: center;
+}
+/* Actual Styling */
+/* Main Page styles */
+.body {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100vw;
+}
+
+.animation-container {
+  text-align: left;
+  margin: 130px 0px;
+  width: 100vw;
+  height: 500px;
+  background-color: #00263e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation {
+  position: relative;
+  top: 50px;
+  bottom: 20px;
+  width: 500px;
+  height: 100%;
+}
+
+.animation-container-text {
+  position: absolute;
+  left: 560px;
+  color: white;
+  align-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.animation-container-text p {
+  font-size: 2rem;
+  position: relative;
+  top: 20px;
+  color: white;
+}
+
+.animation-container-button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  margin-top: 30px;
+  gap: 20px;
+  height: 40px;
+}
+
+button.watch-now,
+button.learn-more {
+  height: 100%;
+  color: white;
+  background-color: #14597c;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+button.watch-now {
+  background-color: transparent;
+  border: white solid;
+  
+}
+
+
+/* Slide container*/
+.slide_container {
+  position: relative;
+  margin: 50px 15px;
+  background-color: #6f8eaf;
+  height: 400px;
+  overflow-x: hidden;
+  color: white;
+  border-radius: 15px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 2.5s ease;
+  width: 100%;
+}
+
+.slide-one, .slide-two {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 100px 0px;
+}
+
+.slide-one button, .slide-two button{
+  background-color: #0068A2;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+
+
+/* Media Container */
+.media_container{
+  display: flex;
+  margin: 60px 15px;
+  height: 400px;
+  width: 100vw;
+  background-color: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+
+}
+
+.media_container_video{
+  background-color: none;
+  display: flex;
+}
+
+.media_container_video video{
+  position: relative;
+  right: 110px;
+}
+
+.media_container_text {
+  position: relative;
+  bottom: 20px;
+  
+}
+
+.media_container_text_button{
+  display: flex;
+  gap: 20px;
+  background-color: transparent;
+}
+
+.start_free_trail{
+  background-color: transparent;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+
+
+/* Button setting genral */
+/* imp */
+.button{
+  border-radius: 7px;
+  padding: 13px 43px;
+  background-color: transparent;
+  font-family: sans-serif;
+}
+
+
+/* Video setting genral */
+/* imp */
+video{
+  border-radius: 15px;
+}
+
+
+/* Second media container */
+
+.second_media_container_video{
+  display: flex;
+  position: relative;
+  left: 70px;
+}
+
+.second_media_container_text{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+}
+
+
+/* Picture Container */
+
+.picture_container{
+  height: 600px;
+  margin-top: 100px;
+  background-color: #084586;
+  background-size: cover;
+  background-image: url('./assets/media/pictures/pic.avif');
+}
+
+/* After Picture Container */
+
+.after_pic_container{
+  height: fit-content;
+  color: #0056b3;
+  display: flex;
+  margin: 90px 0px;
+  height: 400px;
+
+}
+
+.after_pic_container_text{
+  margin: auto 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.after_pic_container_text button{
+  background-color: transparent;
+  border: none;
+  color: #0068A2;
+  width: fit-content;
+}
+
+
+.after_pic_container_img{
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.after_pic_container_img img{
+  height: 90%;
+  width: 90%;
+  border-radius: 15px;
+  background-size: cover;
+}
+
+/* After State container */
+
+.after_states_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  max-width: 100%;
+}
+
+.after_states_container h2 {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.after_states_container p {
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+
+
+.after_states_container video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: fit-content;
+  height: 680px;
+}
+
+
+
+
+
+
+
+
+/* From Here It Would be Current Page */
+
+.current-main-page {
+  position: relative;
+  top: 170px;
+  left: 0px;
+  width: 100vw;
+  justify-content: center;
+  background-color: none ;
+  overflow-x: hidden;
+
+}
+
+.current-main-page img {
+  width: 100%;
+  height: 700px;
+}
