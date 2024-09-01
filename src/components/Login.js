@@ -1,11 +1,10 @@
-// src/components/LoginPage.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const client = axios.create({
-  baseURL: "http://127.0.0.1:8000"
+  baseURL: "http://127.0.0.1:8000", // Adjust this to your backend's URL
 });
 
 function LoginPage({ setCurrentUser }) {
@@ -18,9 +17,21 @@ function LoginPage({ setCurrentUser }) {
     e.preventDefault();
     try {
       const response = await client.post("/api/login/", { email, password });
-      setCurrentUser(true);
-      navigate('/'); // Redirect to home page
-      setErrorMessage(''); // Clear any previous error message
+      
+      // Assuming the server returns a token and user data
+      const { token, user } = response.data;
+
+      // Store the token in localStorage (or sessionStorage)
+      localStorage.setItem('authToken', token);
+
+      // Set the current user
+      setCurrentUser(user);
+
+      // Redirect to the home page
+      navigate('/');
+
+      // Clear any previous error message
+      setErrorMessage('');
     } catch (error) {
       if (error.response && error.response.status === 401) {
         setErrorMessage('Wrong email address or password');

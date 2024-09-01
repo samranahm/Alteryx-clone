@@ -8,7 +8,7 @@ import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import numbers_video from './assets/media/Videos/numbers.mp4';
 import cool_video from './assets/media/Videos/cool_video.mp4';
 import call_center from './assets/media/Videos/call_center.mp4'
-import pic from './assets/media/pictures/pic.avif';
+// import pic from './assets/media/pictures/pic.avif';
 
 // Components
 import Features from './components/Features';
@@ -193,14 +193,17 @@ function App({ setCurrentUser }) {
 }
 
 function RoutesConfig() {
-  const [currentUser, setCurrentUser] = useState(false);
+  // const [currentUser, setCurrentUser] = useState(false);
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<App setCurrentUser={setCurrentUser} />} />
+      {/*  <Route path="/" element={<App setCurrentUser={setCurrentUser} />} />
         <Route path="/register" element={<Register setCurrentUser={setCurrentUser} />} />
-        <Route path="/login" element={<Login setCurrentUser={setCurrentUser} />} />
+        <Route path="/login" element={<Login setCurrentUser={setCurrentUser} />} />*/}
+        <Route path="/" element={<App />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/features" element={<Features />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/test" element={<Test />} />
